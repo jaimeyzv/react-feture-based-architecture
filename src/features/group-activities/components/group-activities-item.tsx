@@ -7,13 +7,13 @@ export default function GroupActivitiesItem({
     date,
     place
 } : GroupActivity) {
-    return (
-        <div className="rounded-lg border p-2 border-black/20 ">
-            <p className="font-bold text-lg">{groupActivityId}</p>
-            <p className="font-bold text-lg">{name}</p>
-            <p className="text-teal-800">{description}</p>
-            {/* <p className="text-gray-600">{date.toDateString()}</p> */}
-            <p className="text-gray-600">{place}</p>
+    return (        
+        <div className="bg-white shadow rounded p-4 border border-gray-200">
+            <h3 className="text-lg font-semibold text-blue-600">{groupActivityId}</h3>
+            <h3 className="text-lg font-semibold text-blue-600">{name}</h3>
+            <p className="text-gray-700 mt-2">{description}</p>
+            <p className="text-gray-700 mt-2">{date.toString()}</p>
+            <p className="text-gray-700 mt-2">{place}</p>
         </div>
     );
 }
